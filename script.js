@@ -13,8 +13,8 @@ const loadingText = document.getElementById("loadingText");
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
-  const nama = namaInput.value;
-  const barang = barangInput.value;
+  const nama = namaInput.value.trim();
+  const barang = barangInput.value.trim();
 
   const data = new FormData();
   data.append("nama", nama);
@@ -32,13 +32,17 @@ form.addEventListener("submit", async function (event) {
 
     const responseData = await response.json();
 
+    if (!responseData.noTiket || isNaN(responseData.noTiket)) {
+      throw new Error("Nomor tiket tidak valid");
+    }
+
     ticketNumberEl.innerText = responseData.noTiket;
     detailInfo.innerText = `A.n ${nama} - ${barang}`;
 
     form.style.display = "none";
     resultArea.style.display = "block";
   } catch (error) {
-    alert("Gagal menyimpan data");
+    alert("Terjadi kesalahan saat mengambil nomor tiket");
     btnSubmit.disabled = false;
     btnSubmit.innerText = "Ambil Nomor Tiket";
     loadingText.style.display = "none";
