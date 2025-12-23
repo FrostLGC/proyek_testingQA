@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiket Penitipan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Penitipan</h2>
+        
+        <form id="depositForm">
+            <input type="text" id="nama" name="nama" placeholder="Nama Penitip" required autocomplete="off">
+            <input type="text" id="barang" name="barang" placeholder="Nama Barang" required autocomplete="off">
+            <button type="submit" id="btnSubmit">Ambil Nomor Tiket</button>
+            <div class="loading" id="loadingText">Mengambil nomor urut...</div>
+        </form>
+
+        <div class="result-box" id="resultArea">
+            <p class="info-text">NOMOR TIKET ANDA:</p>
+            <div class="number-display" id="ticketNumber">---</div>
+            <p id="detailInfo"></p>
+            <p class="refresh-hint">
+                Transaksi Selesai.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
