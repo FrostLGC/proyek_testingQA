@@ -1,5 +1,5 @@
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbwLh2F2GykqZEHpE3vfHHz0mqUwmKBXSxOJfjHS2j26nLo8n82E27hpvCsh1pDPxbcZRw/exec";
+  "https://script.google.com/macros/s/AKfycbwhDtnKZqfW5x09T4ALMqsdd1tnak8esPkk4ci537mYgEfx6v57eDtCOM5cUSsY2jRh8g/exec";
 
 const form = document.getElementById("depositForm");
 const resultArea = document.getElementById("resultArea");
