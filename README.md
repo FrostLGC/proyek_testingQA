@@ -3,9 +3,8 @@ Pada saat user mengisi form penitipan dan menekan tombol Ambil Nomor Tiket, sist
 Namun nomor tiket yang muncul di halaman justru NaN, dan di Google Spreadsheet kolom nomor tiket menampilkan error #NUM!.
 
 ## 🐞 Tampilan di Aplikasi
-Nomor tiket yang seharusnya berupa angka malah muncul sebagai NaN
-Informasi nama dan barang tetap tampil normal
-<img width="728" height="328" alt="Screenshot 2025-12-23 073306" src="https://github.com/user-attachments/assets/20ac004a-6075-4b76-a789-a169919cd22b" />
+Nomor tiket yang seharusnya berupa angka malah muncul sebagai NaN, Informasi nama dan barang tetap tampil normal
+<img width="728" height="338" alt="Screenshot 2025-12-23 073306" src="https://github.com/user-attachments/assets/20ac004a-6075-4b76-a789-a169919cd22b" />
 
 ## 🐞 Tampilan di Spreadsheet
 Kolom nomor tiket berisi #NUM!
